@@ -17,7 +17,7 @@ export default function ImageUpload({ onResult, onLoading }) {
     formData.append('image', file);
 
     try {
-      const res = await fetch('http://localhost:5000/api/upload', {
+      const res = await fetch('https://resq-bot-v2.onrender.com/api/upload', {
         method: 'POST',
         body: formData,
       });

@@ -117,7 +117,7 @@ export default function Home() {
       const langInstruction =
         lang === "en" ? "\n\n[Please respond in English only]" : "";
       const fullMessage = `${userMessage}${langInstruction}${locationText ? `\n\n[${locationText}]` : ""}`;
-      const res = await fetch("http://localhost:5000/api/chat", {
+      const res = await fetch("https://resq-bot-v2.onrender.com/api/chat", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ message: fullMessage }),
