@@ -11,6 +11,8 @@ app.use(cors());
 app.use(express.json());
 
 app.use('/api/chat', chatRoutes);
+const uploadRoutes = require('./routes/upload');
+app.use('/api/upload', uploadRoutes);
 
 app.get('/', (req, res) => {
   res.json({ message: '🚨 ResQ Bot API is running!' });
