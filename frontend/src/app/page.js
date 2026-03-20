@@ -656,7 +656,7 @@ export default function Home() {
               : "🆘 SOS — EMERGENCY HELP"}
           </button>
 
-          <div style={{ display: "flex", gap: "8px", alignItems: "center" }}>
+          <div style={{ display: 'flex', gap: '6px', alignItems: 'center', width: '100%' }}>
             <VoiceInput onResult={(text) => setInput(text)} />
             <button
               onClick={() => setShowForm(true)}
@@ -684,9 +684,9 @@ export default function Home() {
                 background: "rgba(255,255,255,0.08)",
                 border: "1px solid rgba(255,255,255,0.12)",
                 borderRadius: "14px",
-                padding: "13px 16px",
+                padding: "11px 12px",
                 color: "#fff",
-                fontSize: "13.5px",
+                fontSize: "13px",
                 outline: "none",
               }}
               placeholder={
